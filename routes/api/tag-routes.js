@@ -36,7 +36,7 @@ router.get('/:id', (req, res) => {
   })
   .then((dbPTData) => {
     if (!dbPTData) {
-      res.status(404).json({ message: "No post found with this id" });
+      res.status(404).json({ message: "No tag found with this id" });
       return;
     }
     res.json(dbPTData);
@@ -73,7 +73,7 @@ router.put('/:id', (req, res) => {
   )
   .then((dbPTData) => {
     if (!dbPTData) {
-      res.status(404).json({ message: "No post found with this id" });
+      res.status(404).json({ message: "No tag found with this id" });
       return;
     }
     res.json(dbPTData);
@@ -93,7 +93,7 @@ router.delete('/:id', (req, res) => {
   })
   .then((dbPTData) => {
     if (!dbPTData) {
-      res.status(404).json({ message: "No user found with this id" });
+      res.status(404).json({ message: "No tag found with this id" });
       return;
     }
     res.json(dbPTData);
